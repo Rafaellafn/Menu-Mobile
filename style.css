@@ -8,3 +8,21 @@ a {
     text-decoration: none;
     font-family: sans-serif;
 }
+
+a:hover {
+    background: rgba(0, 0, 0, .05);
+}
+
+#logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#header {
+    display: flex;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+}
