@@ -19,10 +19,37 @@ a:hover {
 }
 
 #header {
+    box-sizing: border-box;
+    height: 70px;
+    padding: 1rem;
     display: flex;
-}
+    align-items: center;
+    justify-content: space-between;
+    background: #e7e7e7 ;
+}  
 
 #menu {
     display: flex;
     list-style: none;
+    gap: .5rem;
 }
+
+#menu a {
+    display: block;
+    padding: .5rem;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    #btn-mobile {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+}
+
