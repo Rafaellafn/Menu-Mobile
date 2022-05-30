@@ -81,9 +81,8 @@ a:hover {
     }
 
     #hamburger {
+        border-top: 2px solid;
         width: 20px;
-        border-top:2px solid;
-
     }
 
     #hamburger::after , #hamburger::before {
@@ -91,9 +90,14 @@ a:hover {
         display: block;
         width: 20px;
         height: 2px;
-        background: blue;
+        background: currentColor;
+        margin-top: 5px;
     }
 
+    #nav.active #hamburger {
+        background: blue;
+    }
+ 
 }  
 
 
