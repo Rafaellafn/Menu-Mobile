@@ -92,12 +92,23 @@ a:hover {
         height: 2px;
         background: currentColor;
         margin-top: 5px;
+        transition: .3s;
+        position: relative;
     }
 
     #nav.active #hamburger {
-        background: blue;
+        border-top-color: transparent;
     }
- 
+
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+
+    }
+
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top:-7px;
+    }
 }  
 
 
